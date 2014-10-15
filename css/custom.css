@@ -1,0 +1,242 @@
+/* DESIGN */
+
+body {
+
+}
+.content {
+	/*margin-top:15%;*/
+}
+.quote {
+	margin-top: 15%;
+	text-align: center;
+	color:white;
+}
+.quote .text{
+	font-size: 36px;
+}
+.quote .from {
+	font-size: 18px;
+}
+.promo {
+	margin-top: 5%;
+	text-align: center;
+}
+.promo img {
+	max-width: 60%;
+}
+
+.events {
+	color:white;
+	margin-top: 10%;
+	text-align: center;
+}
+.events .date { 
+	font-size: 18px;
+}
+.events .event {
+	font-size: 24px;
+}
+.barbers {
+	color:white;
+	margin-top:15%;
+}
+.barbers .appointment {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.barbers h1 {
+	color:white;
+	margin-left: 21%;
+	font-size: 36px;
+}
+.barbers .name {
+	line-height: 1.5rem;
+	font-size: 24px;
+}
+.black {
+	background-color: black;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+
+}
+.white {
+    background-color: white;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+.green {
+	background-color: #004E44;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.bg-image {
+	background-image: url('../img/bg1.png');
+	background-size: cover;
+    -webkit-transition: background 2000ms linear;
+    -moz-transition: background 2000ms linear;
+    -o-transition: background 2000ms linear;
+    -ms-transition: background 2000ms linear;
+    transition: background 2000ms linear;
+}
+.top-bar {
+	background: transparent;
+	/*border-bottom: 1px solid;*/
+	padding: 30px 40px;
+}
+.top-bar p {
+	line-height: 0.1;
+	font-weight: 300;
+}
+.dark .time {
+	color:white;
+	font-size: 18px;
+	font-weight: 700;
+}
+#liveTime {
+	font-size: 22px;
+}
+.dark .now-playing {
+	color:white;
+}
+.now-playing {
+	text-align: right;
+}
+.now-playing .title {
+	font-size: 14px;
+}
+/* SLDIESHOW */
+  
+
+#slideshow {
+    position: relative;
+}
+
+#slideshow.collapsed {
+    height: 20px;
+    border: none;
+}
+
+ul.slides {
+	width: 100%;
+    margin-left:0;
+}
+
+.slide {
+
+	text-align: center;
+	height: 500px;
+    display: none; /** slides are hidden by default **/
+}
+
+li.slide {
+	list-style: none;
+}
+
+.slide.right {
+    background-position: right !important;
+}
+
+.slide.left {
+    background-position: left !important;
+}
+
+.slide .headline {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.slide .caption {
+    color: #999;
+}
+
+.slide .headline,
+.slide .caption {
+    position: absolute;
+}
+
+.slide.right .headline {
+    top: 0px;
+    left: 30px;
+}
+
+.slide.right .caption {
+	padding: 50px;
+    left: 0px;
+    top: 70px;
+}
+
+.slide.left .headline {
+    top: 30px;
+    right: 30px;
+}
+
+.slide.left .caption {
+    top: 70px;
+    right: 30px;
+}
+
+#slideshow .toggler {
+    display: block;
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    background-position: 0 -493px;
+    border: 1px solid #CCCCCC;
+    bottom: -1px;
+    color: black;
+    position: absolute;
+    right: -1px;
+}
+
+#slideshow.collapsed .toggler {
+    right: 0;
+    bottom: 0;
+    background-position: 0 -438px;
+}
+
+#slideshow .controls {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+}
+
+#slideshow.collapsed .controls {
+    display: none;
+}
+
+#slideshow .toggler:hover,
+.slide-control:hover,
+.jump-to.current {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+.toggle-play-pause {
+    background-position: 0 -527px;
+}
+
+.toggle-play-pause.playing {
+    background-position: 0 -509px;
+}
+
+.slide-control {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    padding-top: 3px;
+    text-align: center;
+    margin-right: 2px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
