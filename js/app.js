@@ -95,7 +95,6 @@ APP.Views.Slideshow = Backbone.View.extend({
             }));
         });
 
-        // console.log(this.collection.at(0).attributes.slug);
         this.initialPlay();
 
         return this;
